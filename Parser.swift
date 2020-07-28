@@ -1,7 +1,5 @@
-import UIKit
-import PlaygroundSupport
 
-PlaygroundPage.current.needsIndefiniteExecution = true
+import Foundation
 
 public class K1<A> { public init() {} }
 public class K2<A,B> { public init() {} }
@@ -231,7 +229,7 @@ func isDigit(_ c: String) -> Bool {
 }
     
 
-public indirect enum JsonValue {
+public enum JsonValue {
     case JsonNull
     case JsonBool (Bool)
     case JsonString (String)
@@ -239,16 +237,6 @@ public indirect enum JsonValue {
     case JsonArray ([JsonValue])
     case JsonObject ([(String, JsonValue)])
 }
-
-func getValue(_ a: JsonValue) -> [(String,JsonValue)] {
-    switch a {
-    case let .JsonObject(value):
-        return value
-    default:
-        return []
-    }
-}
-
 
 
 
@@ -329,73 +317,27 @@ func jsonArray() -> ParserT<JsonValue> {
 jsonParser = jsonParser <|> jsonArray()
 
 
-func jsonTuple() -> ParserT<JsonValue> {
-    let comma : ParserT<JsonValue> = {x in JsonValue.JsonNull } <^> charP(",")
-    let pp : ParserT<(JsonValue) -> (String,JsonValue)>  = { x in return makeTuple(x)} <^> str()
-    let cp : ParserT<JsonValue> = ({x in JsonValue.JsonNull } <^> charP(":"))
-    let p2 : ParserT<JsonValue> = cp *> jsonParser
-    let p3 : ParserT<(JsonValue)> = {x in JsonValue.JsonObject([x])} <^> (pp <*> p2)
-    let left : ParserT<JsonValue> = {x in JsonValue.JsonNull } <^> charP("{")
-    let right : ParserT<JsonValue> = const(JsonValue.JsonNull) <^> charP("}")
-    let obp = (p3 <|> (comma *> p3))
-    
-   // return obp
-    
-    
-    return StateT ({ str in
-        
-        func many (_ xs : String) -> [(JsonValue, String)] {
-            if let (s,x) = obp.runStateT(xs) {
-                return ([(s,x)] + many(x))
-            } else {
-                return []
-            }
-        }
-        
-        let res = many(str)
-        let values = res.map( { x in x.0 } )
-        let unconsumed = res.last
-        let ret : (JsonValue, String)  = (res.count > 0) ? (JsonValue.JsonObject( (values.map({x in getValue(x)})).flatMap( {x in x })   ), unconsumed!.1) : (JsonValue.JsonObject([]), str)
-        return ret
-    })
-}
+/*
+ jsonObject :: Parser JsonValue
+  108 jsonObject = charP '{'
+  109   *> ( (\xs -> JsonObject xs) <$> (many manyPairs) )
+  110   <*  charP '}'
+  111   where
+  112     manyPairs = empty <|> singleValue  <|> value  --
+  113     value =  charP ',' *> ((,) <$> str <*> (charP ':' *> jsonValue))
+  114     singleValue = (,) <$> str <*> (charP ':' *> jsonValue)
+ */
+
+
 func jsonObject() -> ParserT<JsonValue> {
-    let left : ParserT<JsonValue> = {x in JsonValue.JsonNull } <^> charP("{")
-    let right : ParserT<JsonValue> = const(JsonValue.JsonNull) <^> charP("}")
-    return (left *> jsonTuple() <* right)
+    let left : ParserT<[JsonValue]> = {x in [] } <^> charP("{")
+    let right : ParserT<[JsonValue]> = const([]) <^> charP("}")
+     
 }
 
 
 
-func makeTuple<A,B>(_ x: A) -> (B) -> (A, B) {
-    return { y in  (x,y)}
-}
-
-jsonParser = jsonParser <|> jsonObject()
 
 
-//print((jsonObject().runStateT("{\"key\":true,\"key2\":false,\"key3\":{\"key4\":null}}")))
-
-
-//let path = playgroundSharedDataDirectory.appendingPathComponent("json.txt")
-
-//print(try String(contentsOf: path, encoding: .utf8))
-
-
-let url = URL(string: "https://lonefox.herokuapp.com/getAllItem")!
-
-let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
-    print("oooo")
-    if let localURL = localURL {
-        print("string")
-        if let string = try? String(contentsOf: localURL) {
-            print(jsonObject().runStateT(string))
-        }
-    }
-}
-
-//task.resume()
-
-print(jsonParser.runStateT("[{\"key\":true,\"key\":[{\"key\":true,\"key\":true}]}]"))
-
+print( (jsonParser.runStateT("[true,true,[true,[123]]]")) )
 
