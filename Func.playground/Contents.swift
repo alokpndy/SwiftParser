@@ -389,12 +389,12 @@ let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, er
     if let localURL = localURL {
         print("string")
         if let string = try? String(contentsOf: localURL) {
-            print(jsonObject().runStateT(string))
+            print(jsonParser.runStateT(string))
         }
     }
 }
 
-//task.resume()
+task.resume()
 
 print(jsonParser.runStateT("[{\"key\":true,\"key\":[{\"key\":true,\"key\":true}]}]"))
 
