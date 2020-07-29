@@ -1,7 +1,7 @@
 # SwiftParser
 
 > Started as JSON parser but can be applied as general Parser and Combinator. 
-> I will rewrite this once I get time.
+> I will rewrite this.
 ---
 ## Application of Haskell Types, Typeclass etc.
 
