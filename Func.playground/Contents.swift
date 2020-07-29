@@ -386,7 +386,7 @@ jsonParser = jsonParser <|> jsonObject()
 //print(try String(contentsOf: path, encoding: .utf8))
 
 
-let url = URL(string: "https://raw.githubusercontent.com/alokpndy/SwiftParser/master/sts.json")!
+let url = URL(string: "https://raw.githubusercontent.com/alokpndy/SwiftParser/master/all.json")!
 
 let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
     print("oooo")
@@ -394,8 +394,7 @@ let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, er
         
         if let string = try? String(contentsOf: localURL) {
             print("string111")
-            print(jsonParser.runStateT(string))
-            print("string")
+            print((jsonParser.runStateT(string))!.0)
         }
     }
 }
