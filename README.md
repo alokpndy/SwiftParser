@@ -10,3 +10,6 @@
 ## Transcription in Swift 
     1. Applying Generic Swift pattern; struct StateT<S,A>  {..}
     2. Protocols provide aletrnative to TypeClass; protocol Functor {..} etc. 
+
+
+> find code at: Func.playground/Contents.swift
