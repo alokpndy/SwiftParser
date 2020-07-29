@@ -283,6 +283,10 @@ func str() -> ParserT<String> {
 }
 
 
+func jsonStr() -> ParserT<JsonValue> {
+    return ({x in return JsonValue.JsonString(x)} <^> str())
+}
+
 func jsonNull() -> ParserT<JsonValue> {
     let parserResult = jsonString(str: "null")
     return parserResult.fmap(const(_:JsonValue.JsonNull))
@@ -295,7 +299,7 @@ func jsonBool() -> ParserT<JsonValue> {
 
 
 
-var jsonParser = jsonNull() <|> jsonBool() <|> jsonNumber()
+var jsonParser = jsonNull() <|> jsonBool() <|> jsonNumber() <|> jsonStr()
 
 func some() -> ParserT<[JsonValue]> {
     let comma : ParserT<JsonValue> = {x in JsonValue.JsonNull } <^> charP(",")
@@ -382,20 +386,21 @@ jsonParser = jsonParser <|> jsonObject()
 //print(try String(contentsOf: path, encoding: .utf8))
 
 
-let url = URL(string: "https://lonefox.herokuapp.com/getAllItem")!
+let url = URL(string: "https://raw.githubusercontent.com/alokpndy/SwiftParser/master/sts.json")!
 
 let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
     print("oooo")
     if let localURL = localURL {
-        print("string")
+        
         if let string = try? String(contentsOf: localURL) {
+            print("string111")
             print(jsonParser.runStateT(string))
+            print("string")
         }
     }
 }
 
 task.resume()
 
-print(jsonParser.runStateT("[{\"key\":true,\"key\":[{\"key\":true,\"key\":true}]}]"))
-
+//print(jsonParser.runStateT("[{\"key\":\"keyv\",\"key\":[{\"key\":true,\"key\":true}]}]"))
 
