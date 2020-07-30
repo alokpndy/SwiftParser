@@ -1,0 +1,19 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/alokpandey\/Desktop\/Parser Swift\/.build\/x86_64-apple-macosx\/debug\/ParSwiftPackageTests.xctest\/Contents\/MacOS\/ParSwiftPackageTests",
+      "packageName" : "ParSwift",
+      "productName" : "ParSwiftPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.ParSwift-debug.module" : "ParSwift",
+    "C.ParSwiftTests-debug.module" : "ParSwiftTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

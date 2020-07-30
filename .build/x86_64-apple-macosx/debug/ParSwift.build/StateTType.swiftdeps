@@ -1,0 +1,132 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StateT"
+- "<*>"
+- "<*>"
+- "ParserT"
+provides-nominal:
+- "8ParSwift6StateTV"
+provides-member:
+- ["8ParSwift6StateTV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "<*>"
+- "A"
+- "Alternative"
+- "Applicative"
+- "AssignmentPrecedence"
+- "B"
+- "FAB"
+- "FunctionArrowPrecedence"
+- "Functor"
+- "Optional"
+- "ParserT"
+- "S"
+- "StateT"
+- "String"
+depends-member:
+- ["8ParSwift11AlternativeP", "A"]
+- ["8ParSwift11AlternativeP", "B"]
+- ["8ParSwift11AlternativeP", "Default_A"]
+- ["8ParSwift11AlternativeP", "Default_FC"]
+- ["8ParSwift11AlternativeP", "FAB"]
+- ["8ParSwift11AlternativeP", "FB"]
+- ["8ParSwift11AlternativeP", "FC"]
+- !private ["8ParSwift11AlternativeP", "StateT"]
+- ["8ParSwift11AlternativeP", ""]
+- ["8ParSwift11AlternativeP", "_Default_A"]
+- ["8ParSwift11AlternativeP", "_Default_FC"]
+- ["8ParSwift11AlternativeP", "alt"]
+- ["8ParSwift11AlternativeP", "ap"]
+- ["8ParSwift11AlternativeP", "empty"]
+- ["8ParSwift11AlternativeP", "fmap"]
+- !private ["8ParSwift11AlternativeP", "init"]
+- ["8ParSwift11AlternativeP", "pure"]
+- !private ["8ParSwift11AlternativeP", "runStateT"]
+- ["8ParSwift11ApplicativeP", "A"]
+- ["8ParSwift11ApplicativeP", "B"]
+- ["8ParSwift11ApplicativeP", "Default_A"]
+- ["8ParSwift11ApplicativeP", "Default_FC"]
+- ["8ParSwift11ApplicativeP", "FAB"]
+- ["8ParSwift11ApplicativeP", "FB"]
+- ["8ParSwift11ApplicativeP", "FC"]
+- !private ["8ParSwift11ApplicativeP", "StateT"]
+- ["8ParSwift11ApplicativeP", ""]
+- ["8ParSwift11ApplicativeP", "_Default_A"]
+- ["8ParSwift11ApplicativeP", "_Default_FC"]
+- ["8ParSwift11ApplicativeP", "alt"]
+- ["8ParSwift11ApplicativeP", "ap"]
+- ["8ParSwift11ApplicativeP", "empty"]
+- ["8ParSwift11ApplicativeP", "fmap"]
+- !private ["8ParSwift11ApplicativeP", "init"]
+- ["8ParSwift11ApplicativeP", "pure"]
+- !private ["8ParSwift11ApplicativeP", "runStateT"]
+- ["8ParSwift7FunctorP", "A"]
+- ["8ParSwift7FunctorP", "B"]
+- ["8ParSwift7FunctorP", "Default_A"]
+- ["8ParSwift7FunctorP", "Default_FC"]
+- ["8ParSwift7FunctorP", "FAB"]
+- ["8ParSwift7FunctorP", "FB"]
+- ["8ParSwift7FunctorP", "FC"]
+- !private ["8ParSwift7FunctorP", "StateT"]
+- ["8ParSwift7FunctorP", ""]
+- ["8ParSwift7FunctorP", "_Default_A"]
+- ["8ParSwift7FunctorP", "_Default_FC"]
+- ["8ParSwift7FunctorP", "alt"]
+- ["8ParSwift7FunctorP", "ap"]
+- ["8ParSwift7FunctorP", "empty"]
+- ["8ParSwift7FunctorP", "fmap"]
+- !private ["8ParSwift7FunctorP", "init"]
+- ["8ParSwift7FunctorP", "pure"]
+- !private ["8ParSwift7FunctorP", "runStateT"]
+- ["8ParSwift6StateTV", "A"]
+- ["8ParSwift6StateTV", "B"]
+- ["8ParSwift6StateTV", "C"]
+- ["8ParSwift6StateTV", "Default_A"]
+- ["8ParSwift6StateTV", "Default_FC"]
+- ["8ParSwift6StateTV", "FAB"]
+- ["8ParSwift6StateTV", "FB"]
+- ["8ParSwift6StateTV", "FC"]
+- ["8ParSwift6StateTV", "Optional"]
+- ["8ParSwift6StateTV", "StateT"]
+- ["8ParSwift6StateTV", ""]
+- ["8ParSwift6StateTV", "_Default_A"]
+- ["8ParSwift6StateTV", "_Default_FC"]
+- ["8ParSwift6StateTV", "alt"]
+- ["8ParSwift6StateTV", "ap"]
+- ["8ParSwift6StateTV", "empty"]
+- ["8ParSwift6StateTV", "fmap"]
+- ["8ParSwift6StateTV", "init"]
+- ["8ParSwift6StateTV", "pure"]
+- ["8ParSwift6StateTV", "runStateT"]
+depends-nominal:
+- "8ParSwift11AlternativeP"
+- "8ParSwift11ApplicativeP"
+- "8ParSwift7FunctorP"
+- "8ParSwift6StateTV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6f1690949ee92281adfb80e948b2fc52"

@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.16.13 clang-1200.0.22.25)"
+options: "036b71d4ea41615aca02e6e72f79488a"
+build_time: [1596084069, 964697000]
+inputs:
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Applicative.swift": [1596037502, 396408756]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ArrayExtension.swift": [1596037555, 754870836]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Combinators.swift": [1596081094, 46786589]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Foldable.swift": [1596037533, 139174987]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functions.swift": [1596038382, 940803247]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functor.swift": [1596037502, 410362481]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Kind.swift": [1596037346, 315922804]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ParSwift.swift": [1596083940, 299784519]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Parser.swift": [1596042407, 516774044]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/StateTType.swift": [1596041686, 693359123]
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/TypeClass.swift": [1596037190, 225723156]

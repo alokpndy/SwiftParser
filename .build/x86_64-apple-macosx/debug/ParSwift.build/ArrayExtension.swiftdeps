@@ -1,0 +1,227 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ArrayMatcher"
+- "uncurry"
+provides-nominal:
+- "8ParSwift12ArrayMatcherO"
+provides-member:
+- ["8ParSwift12ArrayMatcherO", ""]
+- ["Sa", ""]
+- ["Sa", "match"]
+- ["Sa", "foldr"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "..<"
+- !private "=="
+- "A"
+- "Array"
+- "ArrayMatcher"
+- "Element"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "uncurry"
+depends-member:
+- !private ["Sa", "Array"]
+- ["Sa", "ArrayMatcher"]
+- ["Sa", ""]
+- !private ["Sa", "count"]
+- ["Sa", "foldr"]
+- !private ["Sa", "init"]
+- ["Sa", "match"]
+- !private ["Sa", "subscript"]
+- ["8ParSwift12ArrayMatcherO", "Cons"]
+- ["8ParSwift12ArrayMatcherO", "Nil"]
+- !private ["SK", "Array"]
+- !private ["SK", ""]
+- !private ["SK", "count"]
+- !private ["SK", "foldr"]
+- !private ["SK", "init"]
+- !private ["SK", "match"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "Array"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "foldr"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "match"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "Array"]
+- !private ["Sl", ""]
+- !private ["Sl", "count"]
+- !private ["Sl", "foldr"]
+- !private ["Sl", "init"]
+- !private ["Sl", "match"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "Array"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "foldr"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "match"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "Array"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "foldr"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "match"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "Array"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "foldr"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "match"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "Array"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "foldr"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "match"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "Array"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "foldr"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "match"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "Array"]
+- !private ["Se", "count"]
+- !private ["Se", "foldr"]
+- !private ["Se", "init"]
+- !private ["Se", "match"]
+- !private ["Se", "subscript"]
+- !private ["SE", "Array"]
+- !private ["SE", "count"]
+- !private ["SE", "foldr"]
+- !private ["SE", "init"]
+- !private ["SE", "match"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "Array"]
+- !private ["SQ", ""]
+- !private ["SQ", "count"]
+- !private ["SQ", "foldr"]
+- !private ["SQ", "init"]
+- !private ["SQ", "match"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "Array"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "foldr"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "match"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "Array"]
+- !private ["SH", "count"]
+- !private ["SH", "foldr"]
+- !private ["SH", "init"]
+- !private ["SH", "match"]
+- !private ["SH", "subscript"]
+- !private ["SM", "Array"]
+- !private ["SM", ""]
+- !private ["SM", "count"]
+- !private ["SM", "foldr"]
+- !private ["SM", "init"]
+- !private ["SM", "match"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "Array"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "foldr"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "match"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSObjectP", ""]
+- !private ["Sk", "Array"]
+- !private ["Sk", ""]
+- !private ["Sk", "count"]
+- !private ["Sk", "foldr"]
+- !private ["Sk", "init"]
+- !private ["Sk", "match"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "Array"]
+- !private ["Sm", ""]
+- !private ["Sm", "count"]
+- !private ["Sm", "foldr"]
+- !private ["Sm", "init"]
+- !private ["Sm", "match"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "Array"]
+- !private ["ST", ""]
+- !private ["ST", "count"]
+- !private ["ST", "foldr"]
+- !private ["ST", "init"]
+- !private ["ST", "match"]
+- !private ["ST", "subscript"]
+- !private ["s14_ArrayProtocolP", "Array"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "foldr"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "match"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "Array"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "foldr"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "match"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "Array"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "foldr"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "match"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Array"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "foldr"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "match"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "Array"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "foldr"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "match"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "Sa"
+- "8ParSwift12ArrayMatcherO"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- !private "So8NSObjectP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3393685d1757b419ecc015a27b47c43b"

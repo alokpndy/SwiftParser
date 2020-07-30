@@ -1,0 +1,71 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/master.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Applicative.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ArrayExtension.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Combinators.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Foldable.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functions.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functor.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Kind.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ParSwift.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Parser.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/StateTType.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.swiftdeps"
+  },
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/TypeClass.swift": {
+    "dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.d",
+    "object": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.swift.o",
+    "swiftmodule": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass~partial.swiftmodule",
+    "swift-dependencies": "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.swiftdeps"
+  }
+}

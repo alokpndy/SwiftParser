@@ -1,0 +1,4 @@
+module ParSwift {
+    header "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift-Swift.h"
+    requires objc
+}

@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "ParSwift-debug.module": ["<ParSwift-debug.module>"]
+  "ParSwiftPackageTests-debug.test": ["<ParSwiftPackageTests-debug.test>"]
+  "ParSwiftTests-debug.module": ["<ParSwiftTests-debug.module>"]
+  "main": ["<ParSwift-debug.module>"]
+  "test": ["<ParSwift-debug.module>","<ParSwiftPackageTests-debug.test>","<ParSwiftTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/":
+    is-directory-structure: true
+  "/Users/alokpandey/Desktop/Parser Swift/Tests/ParSwiftTests/":
+    is-directory-structure: true
+commands:
+  "<ParSwift-debug.module>":
+    tool: phony
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.swiftmodule"]
+    outputs: ["<ParSwift-debug.module>"]
+
+  "<ParSwiftPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftPackageTests.xctest/Contents/MacOS/ParSwiftPackageTests"]
+    outputs: ["<ParSwiftPackageTests-debug.test>"]
+
+  "<ParSwiftTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/ParSwiftTests.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/XCTestManifests.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.swiftmodule"]
+    outputs: ["<ParSwiftTests-debug.module>"]
+
+  "C.ParSwift-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Applicative.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ArrayExtension.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Combinators.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Foldable.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functions.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functor.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Kind.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ParSwift.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Parser.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/StateTType.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/TypeClass.swift"]
+    outputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.swiftmodule"]
+    executable: "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "ParSwift"
+    module-output-path: "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.swiftmodule"
+    import-paths: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build"
+    objects: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift-Swift.h","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Applicative.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ArrayExtension.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Combinators.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Foldable.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functions.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Functor.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Kind.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/ParSwift.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/Parser.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/StateTType.swift","/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/TypeClass.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "C.ParSwiftPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Applicative.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ArrayExtension.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Combinators.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Foldable.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functions.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Functor.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Kind.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/ParSwift.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/Parser.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/StateTType.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.build/TypeClass.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/ParSwiftTests.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftPackageTests.xctest/Contents/MacOS/ParSwiftPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/ParSwiftPackageTests.xctest/Contents/MacOS/ParSwiftPackageTests"
+    args: ["/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug","-o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftPackageTests.xctest/Contents/MacOS/ParSwiftPackageTests","-module-name","ParSwiftPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.15","-Xlinker","-add_ast_path","-Xlinker","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.swiftmodule","-L","/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.ParSwiftTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/Tests/ParSwiftTests/ParSwiftTests.swift","/Users/alokpandey/Desktop/Parser Swift/Tests/ParSwiftTests/XCTestManifests.swift","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwift.swiftmodule"]
+    outputs: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/ParSwiftTests.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/XCTestManifests.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.swiftmodule"]
+    executable: "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "ParSwiftTests"
+    module-output-path: "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.swiftmodule"
+    import-paths: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build"
+    objects: ["/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/ParSwiftTests.swift.o","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ParSwiftTests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.16.sdk","-F","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/alokpandey/Desktop/Parser Swift/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/alokpandey/Desktop/Parser Swift/Tests/ParSwiftTests/ParSwiftTests.swift","/Users/alokpandey/Desktop/Parser Swift/Tests/ParSwiftTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/alokpandey/Desktop/Parser Swift/Sources/ParSwift/","/Users/alokpandey/Desktop/Parser Swift/Tests/ParSwiftTests/","/Users/alokpandey/Desktop/Parser Swift/Package.swift","/Users/alokpandey/Desktop/Parser Swift/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
