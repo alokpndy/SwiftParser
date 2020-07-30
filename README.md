@@ -14,5 +14,4 @@
     2. Protocols provide aletrnative to TypeClass; protocol Functor {..} etc. 
 
 
-> find code at: Func.playground/Contents.swift
->>>>>>> 06684c40cdbbb2fbdd4767096eb25cd617e24fe3
+
