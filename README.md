@@ -1,6 +1,5 @@
 # ParSwift
 
-<<<<<<<
 A general purpose parser in Swift.
 =======
 > Started as JSON parser but can be applied as general Parser and Combinator. 
