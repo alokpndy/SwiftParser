@@ -5,13 +5,10 @@ public class ParSwift {
         
     }
     
-   // public static var combinator : Combinators {
-    //    return Combinators()
-   // }
-    
-    public static func show () {
-        print ("Hello")
+    public static var combinator : Combinators {
+        return Combinators()
     }
-        
-    
+   
 }
+
+

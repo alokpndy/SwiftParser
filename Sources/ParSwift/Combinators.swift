@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Combinators {
 
 
-    var jsonParser : ParserT<JsonValue> {
+
+
+
+public struct Combinators {
+
+    public var jsonParser : ParserT<JsonValue> {
         get {
             return (jsonNull() <|> jsonBool() <|> jsonNumber() <|> jsonStr() <|> jsonArray() <|> jsonObject())
         }
@@ -18,24 +22,7 @@ struct Combinators {
     
     init() {}
     
-    func charP (_ char : (Character)) -> ParserT<Character> {
-        let cP
-            = ParserT<Character>({ (x : String) in
-                char == x.first ? Optional((char, String(x.dropFirst()))) : nil  })
-        return cP
-    }
     
-    func stringLiteral() -> ParserT<String> {
-        return StateT({ str in
-            if let (xs, ys) = spanP( { xs in xs != "\""}  , str.map { String($0) }) {
-                return (xs.joined(separator: ""), ys.joined(separator: ""))
-            } else { return nil }
-        })
-    }
-
-    func str() -> ParserT<String> {
-        return ( {x in String(x)} <^> charP("\"")) *> stringLiteral() <* ({x in String(x)} <^>  charP("\""))
-    }
     
 
 
