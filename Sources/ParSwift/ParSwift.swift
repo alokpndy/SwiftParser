@@ -8,7 +8,7 @@ public class ParSwift {
     public static var combinator : Combinators {
         return Combinators()
     }
-   
+
 }
 
 
