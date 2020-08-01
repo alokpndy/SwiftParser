@@ -20,6 +20,7 @@ import ParSwift
 
 let jsonStr = "[{\"key1\":\"12\",\"key2\":[{\"key3\":true,\"key4\":null}]}]"
 
+/// There are other general combinators also.
 let parsed = ParSwift().combinator.jsonParser.runStateT(jsonStr)
 
 ```
