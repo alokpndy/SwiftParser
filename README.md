@@ -13,5 +13,14 @@
     1. Applying Generic Swift pattern; struct StateT<S,A>  {..}
     2. Protocols provide aletrnative to TypeClass; protocol Functor {..} etc. 
 
+## Usage 
 
+```Swift
+import ParSwift 
+
+let jsonStr = "[{\"key\":\"keyv\",\"key\":[{\"key\":true,\"key\":true}]}]"
+
+let parsed = ParSwift().combinator.jsonParser.runStateT(jsonStr)
+
+```
 
