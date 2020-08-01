@@ -18,7 +18,7 @@
 ```Swift
 import ParSwift 
 
-let jsonStr = "[{\"key\":\"keyv\",\"key\":[{\"key\":true,\"key\":true}]}]"
+let jsonStr = "[{\"key1\":\"12\",\"key2\":[{\"key3\":true,\"key4\":null}]}]"
 
 let parsed = ParSwift().combinator.jsonParser.runStateT(jsonStr)
 
