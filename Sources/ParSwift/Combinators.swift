@@ -8,10 +8,6 @@
 import Foundation
 
 
-
-
-
-
 public struct Combinators {
 
     public var jsonParser : ParserT<JsonValue> {
@@ -21,8 +17,6 @@ public struct Combinators {
     }
     
     init() {}
-    
-    
     
 
 
@@ -44,9 +38,6 @@ public struct Combinators {
     }
 
 
-  
-
-
     func jsonStr() -> ParserT<JsonValue> {
         return ({x in return JsonValue.JsonString(x)} <^> str())
     }
@@ -60,9 +51,6 @@ public struct Combinators {
         let parserResult = ((jsonString(str: "true").fmap(const(_:JsonValue.JsonBool(true)))) ).alt((jsonString(str: "false")).fmap(const(_:JsonValue.JsonBool(false))))
         return parserResult
     }
-
-
-
 
 
     func some() -> ParserT<[JsonValue]> {
@@ -116,7 +104,6 @@ public struct Combinators {
         })
     
     }
-
 
 
     func jsonObject() -> ParserT<JsonValue> {
